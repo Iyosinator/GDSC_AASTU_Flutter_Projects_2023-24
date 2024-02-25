@@ -1,5 +1,3 @@
-## Deadline Nov, 21/2023, 11:59 pm
-
 # Git Coding Exercise
 
 ## 1. Create a GitHub Account:
