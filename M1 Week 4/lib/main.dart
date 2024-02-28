@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  // runApp(const MyApp());
-  Text('Hello, world!');
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Todo List App'
-    );
-  }
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Hello World'),
+        ),
+        body: Center(
+          child: Text('Hello World'),
+        ),
+      ),
+    ),
+  );
 }
