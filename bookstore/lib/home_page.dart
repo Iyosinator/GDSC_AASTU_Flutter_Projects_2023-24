@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: EdgeInsets.all(15.0),
                             child: TextField(
                               decoration: InputDecoration(
                                 border: InputBorder.none,
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                 padding: const EdgeInsets.all(12.0),
                 child: Container(
                   padding: const EdgeInsets.all(10),
-                  height: 200,
+                  height: 254,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
@@ -327,9 +327,9 @@ class _HomePageState extends State<HomePage> {
                             width: 110,
                             child: Column(
                               children: [
-                                Image.asset('assets/Rectangle.png'),
-                                Text(
-                                  'Papillion Based on true story',
+                                Image.asset('assets/Rectangle3.png'),
+                                const Text(
+                                  'Yebedel Kassa Novel',
                                 )
                               ],
                             ),
@@ -368,9 +368,9 @@ class _HomePageState extends State<HomePage> {
                             width: 110,
                             child: Column(
                               children: [
-                                Image.asset('assets/Rectangle3.png'),
-                                Text(
-                                  'Yebedel Kassa Novel',
+                                Image.asset('assets/Rectangle7.png'),
+                                const Text(
+                                  'Evolution of the learning brain',
                                 )
                               ],
                             ),
@@ -409,9 +409,9 @@ class _HomePageState extends State<HomePage> {
                             width: 110,
                             child: Column(
                               children: [
-                                Image.asset('assets/Rectangle.png'),
-                                Text(
-                                  'Papillion Based on true story',
+                                Image.asset('assets/Rectangle6.png'),
+                                const Text(
+                                  'Trever Noah Born a crime',
                                 )
                               ],
                             ),
@@ -450,9 +450,9 @@ class _HomePageState extends State<HomePage> {
                             width: 110,
                             child: Column(
                               children: [
-                                Image.asset('assets/Rectangle.png'),
-                                Text(
-                                  'Papillion Based on true story',
+                                Image.asset('assets/Rectangle5.png'),
+                                const Text(
+                                  'Piyasa muhamud Ga Tebkign',
                                 )
                               ],
                             ),
@@ -491,9 +491,9 @@ class _HomePageState extends State<HomePage> {
                             width: 110,
                             child: Column(
                               children: [
-                                Image.asset('assets/Rectangle3.png'),
-                                Text(
-                                  'Yebedel Kassa Novel',
+                                Image.asset('assets/Rectangle4.png'),
+                                const Text(
+                                  'Rich Dad Poor Dad Ro. T',
                                 )
                               ],
                             ),
@@ -532,9 +532,9 @@ class _HomePageState extends State<HomePage> {
                             width: 110,
                             child: Column(
                               children: [
-                                Image.asset('assets/Rectangle.png'),
-                                Text(
-                                  'Papillion Based on true story',
+                                Image.asset('assets/Rectangle3.png'),
+                                const Text(
+                                  'Yebedel Kassa Novel',
                                 )
                               ],
                             ),
@@ -591,7 +591,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Image.asset('assets/Rectangle4.png'),
-                            Text('Rich Dad Poor Dad Ro. T')
+                            const Text('Rich Dad Poor Dad Ro. T')
                           ],
                         ),
                       ),
@@ -603,7 +603,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Image.asset('assets/Rectangle5.png'),
-                            Text('Piyasa muhamud Ga Tebkign'),
+                            const Text('Piyasa muhamud Ga Tebkign'),
                           ],
                         ),
                       ),
@@ -615,7 +615,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Image.asset('assets/Rectangle4.png'),
-                            Text('Rich Dad Poor Dad Ro. T')
+                            const Text('Rich Dad Poor Dad Ro. T')
                           ],
                         ),
                       ),
@@ -627,7 +627,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Image.asset('assets/Rectangle5.png'),
-                            Text('Piyasa muhamud Ga Tebkign'),
+                            const Text('Piyasa muhamud Ga Tebkign'),
                           ],
                         ),
                       ),
@@ -639,7 +639,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Image.asset('assets/Rectangle4.png'),
-                            Text('Rich Dad Poor Dad Ro. T')
+                            const Text('Rich Dad Poor Dad Ro. T')
                           ],
                         ),
                       ),
@@ -651,7 +651,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Image.asset('assets/Rectangle5.png'),
-                            Text('Piyasa muhamud Ga Tebkign'),
+                            const Text('Piyasa muhamud Ga Tebkign'),
                           ],
                         ),
                       ),
@@ -690,7 +690,7 @@ class _HomePageState extends State<HomePage> {
                             child: Column(
                               children: [
                                 Image.asset('assets/Rectangle6.png'),
-                                Text(
+                                const Text(
                                   'Born Crime by Trevor noha',
                                 )
                               ],
@@ -731,7 +731,7 @@ class _HomePageState extends State<HomePage> {
                             child: Column(
                               children: [
                                 Image.asset('assets/Rectangle7.png'),
-                                Text(
+                                const Text(
                                   'Evolution of the learning brain',
                                 )
                               ],
@@ -772,7 +772,7 @@ class _HomePageState extends State<HomePage> {
                             child: Column(
                               children: [
                                 Image.asset('assets/Rectangle6.png'),
-                                Text(
+                                const Text(
                                   'Born Crime by Trevor noha',
                                 )
                               ],
@@ -813,7 +813,7 @@ class _HomePageState extends State<HomePage> {
                             child: Column(
                               children: [
                                 Image.asset('assets/Rectangle7.png'),
-                                Text(
+                                const Text(
                                   'Evolution of the learning brain',
                                 )
                               ],
@@ -854,7 +854,7 @@ class _HomePageState extends State<HomePage> {
                             child: Column(
                               children: [
                                 Image.asset('assets/Rectangle6.png'),
-                                Text(
+                                const Text(
                                   'Born Crime by Trevor noha',
                                 )
                               ],
@@ -895,7 +895,7 @@ class _HomePageState extends State<HomePage> {
                             child: Column(
                               children: [
                                 Image.asset('assets/Rectangle7.png'),
-                                Text(
+                                const Text(
                                   'Evolution of the learning brain',
                                 )
                               ],

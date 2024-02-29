@@ -40,6 +40,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 209, 141, 77),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -62,10 +63,11 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                       AnimatedTextKit(
                         animatedTexts: [
                           TypewriterAnimatedText(
-                            'Embark on a Literacy Journey ',
+                            'Welcome to Bookstore',
                             textStyle: const TextStyle(
-                              fontStyle: FontStyle.italic,
+                              fontSize: 30,
                               fontWeight: FontWeight.w700,
+                              color: Colors.white,
                             ),
                             // curve: Curves.bounceInOut,
                             speed: const Duration(milliseconds: 50),
@@ -75,23 +77,12 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                       ),
                       AnimatedTextKit(
                         animatedTexts: [
-                          WavyAnimatedText(
-                            'and',
-                            textStyle: const TextStyle(
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                        ],
-                        isRepeatingAnimation: false,
-                      ),
-                      AnimatedTextKit(
-                        animatedTexts: [
                           TypewriterAnimatedText(
-                            'Explore Endless World.',
+                            'Get your favorite books here!',
                             textStyle: const TextStyle(
                               fontStyle: FontStyle.italic,
                               fontWeight: FontWeight.w700,
+                              color: Colors.white
                             ),
                             speed: const Duration(milliseconds: 50),
                           )

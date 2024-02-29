@@ -14,18 +14,18 @@ class BookReview extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset(
-                    'assets/Rectangle.png',
+                    'assets/Rectangle4.png',
                     fit: BoxFit.fitWidth,
                     width: MediaQuery.of(context).size.width,
                   ),
                   // const SizedBox(
                   //   height: 20,
                   // ),
-                  const Text('Cosmos'),
+                  const Text('Rich Dad Poor Dad'),
                   const SizedBox(
                     height: 10,
                   ),
-                  const Text('Book by carl segan | 2 h 30 m'),
+                  const Text('Book by Robert.T | 1 h 50 m'),
                   const SizedBox(
                     height: 10,
                   ),
@@ -153,7 +153,7 @@ class BookReview extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.all(12.0),
               child: Text(
-                  'Cosmos is one of the bestselling science books of all the time. In clear-eyed prose, Segan reveals a jewek-like blue world inhabited by a life from that is just... '),
+                  'Rich Dad Poor Dad is a 1997 book written by Robert Kiyosaki and Sharon Lechter. It advocates the importance of financial literacy, financial independence and building wealth through investing in assets, real estate investing, starting and owning businesses, as well as increasing one\'s financial intelligence to improve one\'s business and financial aptitude.'),
             ),
             Padding(
               padding: const EdgeInsets.all(12.0),
@@ -187,7 +187,7 @@ class BookReview extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.all(12.0),
               child: Text(
-                  'Cosmos is one of the bestselling science books of all the time. In clear-eyed prose, Segan reveals a jewek-like blue world inhabited by a life from that is just... '),
+                  'Robert Toru Kiyosaki is an American businessman and author. Kiyosaki is the founder of Rich Global LLC and the Rich Dad Company, a private financial education company that provides personal finance and business education to people through books and videos. The company\'s main revenues come from franchisees of the Rich Dad seminars that are conducted by independent individuals using Kiyosaki\'s brand name for a fee.'),
             ),
 
             const Padding(
@@ -218,9 +218,9 @@ class BookReview extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Yihun'),
-                      Text('This is amazing book'),
-                      Text('jan 2024'),
+                      Text('Eyosias.M'),
+                      Text('It teaches me a lot of things about money'),
+                      Text('Mar 1, 2024'),
                     ],
                   )
                 ],
