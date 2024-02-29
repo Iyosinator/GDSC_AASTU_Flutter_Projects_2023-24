@@ -1,36 +1,11 @@
 import 'dart:collection';
 
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:todo_ui/data/models/task_model.dart';
 
 class TaskData extends ChangeNotifier {
-  final List<Task> _tasks = [
-    Task(
-      title: 'Designing Logo',
-      leadingIcon: 'D',
-      description:
-          'I have to design a logo for the company and submit it by the deadline',
-      deadline: 'March 09, 2024',
-    ),
-    Task(
-      title: 'Interview Candidate',
-      leadingIcon: 'I',
-      description: 'I have to interview the candidate for the job',
-      deadline: 'May 2, 2024',
-    ),
-    Task(
-      title: 'Meeting',
-      leadingIcon: 'M',
-      description: 'I have to meet with the team and discuss the project',
-      deadline: 'March 1, 2024',
-    ),
-    Task(
-      title: 'Playing Football',
-      leadingIcon: 'F',
-      description: 'I have to play football with my friends',
-      deadline: 'April 29, 2024',
-    ),
-  ];
+  List<Task> _tasks = [];
 
   int get taskCount {
     return _tasks.length;
@@ -44,6 +19,26 @@ class TaskData extends ChangeNotifier {
     _tasks.add(task);
     notifyListeners();
   }
+
+  Future<void> addToLocal()async {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setStringList('tasks', _tasks.map((e) => e.toJson()).toList());
+    notifyListeners();
+  }
+
+  Future<void> loadFromLocal() async {
+    final prefs = await SharedPreferences.getInstance();
+    final tasks = prefs.getStringList('tasks')?? [];
+    _tasks = tasks.map((e) => Task.fromJson(e)).toList();
+    notifyListeners();
+  }
+
+  Future<void> removeFromLocal() async {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.remove('tasks');
+    notifyListeners();
+  }
+
 
   void deleteTasks(Task task) {
     _tasks.remove(task);

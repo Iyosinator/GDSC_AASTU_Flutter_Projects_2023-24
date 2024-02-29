@@ -5,6 +5,12 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:lottie/lottie.dart';
 
+
+
+
+
+
+
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 

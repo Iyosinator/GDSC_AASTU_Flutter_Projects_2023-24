@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:todo_ui/data/models/task_data.dart';
 
 class TodoListPage extends StatelessWidget {
+  const TodoListPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,15 +22,14 @@ class TodoListPage extends StatelessWidget {
                       Navigator.of(context).pop();
                     },
                     icon: Icon(
-                      Icons.arrow_back_ios_new_sharp,
+                      Icons.arrow_back_ios,
                       color: Colors.amber[900],
-                      
                     ),
                   ),
                   const Text(
                     'Todo List',
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,
                     ),
                   ),
                   const Icon(Icons.more_vert),
@@ -49,7 +50,6 @@ class TodoListPage extends StatelessWidget {
               ),
               const SizedBox(
                 height: 10,
-                width: BorderSide.strokeAlignCenter,
               ),
               Expanded(
                 child: Consumer<TaskData>(
@@ -60,7 +60,7 @@ class TodoListPage extends StatelessWidget {
                         final taskItem = value.tasks[index];
                         return Card(
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(20),
                           ),
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
