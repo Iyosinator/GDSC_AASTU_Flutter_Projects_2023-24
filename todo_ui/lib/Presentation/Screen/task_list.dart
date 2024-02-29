@@ -20,14 +20,15 @@ class TodoListPage extends StatelessWidget {
                       Navigator.of(context).pop();
                     },
                     icon: Icon(
-                      Icons.arrow_back_ios,
+                      Icons.arrow_back_ios_new_sharp,
                       color: Colors.amber[900],
+                      
                     ),
                   ),
                   const Text(
                     'Todo List',
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                     ),
                   ),
                   const Icon(Icons.more_vert),
@@ -48,6 +49,7 @@ class TodoListPage extends StatelessWidget {
               ),
               const SizedBox(
                 height: 10,
+                width: BorderSide.strokeAlignCenter,
               ),
               Expanded(
                 child: Consumer<TaskData>(
@@ -58,7 +60,7 @@ class TodoListPage extends StatelessWidget {
                         final taskItem = value.tasks[index];
                         return Card(
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(40),
                           ),
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
