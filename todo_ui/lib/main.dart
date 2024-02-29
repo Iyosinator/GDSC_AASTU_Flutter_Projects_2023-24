@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_ui/Presentation/Screen/intro.dart';
-import 'package:todo_ui/Presentation/Screen/task_add.dart';
-import 'package:todo_ui/Presentation/Screen/task_detail.dart';
-import 'package:todo_ui/Presentation/Screen/task_list.dart';
+import 'package:todo_ui/Screen/landing.dart';
+import 'package:todo_ui/Screen/add_task.dart';
+import 'package:todo_ui/Screen/detail_task.dart';
+import 'package:todo_ui/Screen/list_task.dart';
 import 'package:todo_ui/data/models/task_data.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

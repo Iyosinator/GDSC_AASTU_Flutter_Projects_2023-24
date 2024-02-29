@@ -154,7 +154,7 @@ class TaskDetailPage extends StatelessWidget {
                   ),
 
                   const SizedBox(
-                    height: 20,
+                    height: 2,
                   ),
                   MaterialButton(
                     shape: RoundedRectangleBorder(
@@ -162,7 +162,7 @@ class TaskDetailPage extends StatelessWidget {
                     ),
                     color: Colors.amber[900],
                     minWidth: double.infinity,
-                    height: 60,
+                    height: 20,
                     onPressed: () {
                       Provider.of<TaskData>(context, listen: false)
                           .deleteTasks(taskItem);
